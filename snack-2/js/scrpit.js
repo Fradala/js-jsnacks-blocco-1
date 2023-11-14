@@ -1,5 +1,5 @@
 const wrapperElement = document.querySelector('div.wrapper')
 
-for (let i =1; i<=6; i = i++){
-    wrapperElement.innerHTML += `<p> $(i) </p>`;
+for (let i = 1; i <= 6; i ++){
+    wrapperElement.innerHTML += (i)
 }
