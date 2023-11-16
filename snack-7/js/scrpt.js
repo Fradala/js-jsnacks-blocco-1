@@ -1,21 +1,13 @@
-const numeri = [];
+let numeriDispari = [];
 
-const primoNumeroUtente = prompt ('inserisci un numero');
-const secondoNumeroUtente = prompt ('inserisci un numero');
-const terzoNumeroUtente = prompt ('inserisci un numero');
-const quartoNumeroUtente = prompt ('inserisci un numero');
-const quintoNumeroUtente = prompt ('inserisci un numero');
-const sestoNumeroUtente = prompt ('inserisci un numero');
+for (let i = 0; i < 6; i ++) {
+  let numero = parseInt(prompt("Inserisci un numero"));
 
-let pari
-
-for (let i = 0; i < numeri.length; i ++){
-
-    if(numeri[i] % 2 == 0){
-       pari.push(numeri[i])
-       console.log(numeri[i])
-    }
-
+    if (!isNaN(numero) && numero % 2 != 0) {
+    numeriDispari.push(numero);
+  }
 }
 
+
+console.log("Numeri dispari inseriti:", numeriDispari);
 
